@@ -28,5 +28,33 @@ export class ApirequestService {
 
     return true;
   }
+  search(term: string) {
+
+    let httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': environment.Authorization
+      })
+    }
+
+    let promise = new Promise((resolve, reject) => {
+      this.http.get<any>(environment.apiRoot + "users/" + term, httpOptions).toPromise().then(
+        resp => {
+
+          if (this.isEmptyObject(resp)) {
+            //  console.log("user not found")
+          } else {
+            this.results2.push(resp)
+            //  console.log(this.results2)
+          }
+          resolve();
+        },
+        err => {
+          this.message = "Sorry user not found"
+        })
+      //  console.log(this.results)
+      return promise;
+    }
+}
 
 }
