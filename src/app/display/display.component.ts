@@ -25,6 +25,7 @@ export class DisplayComponent implements OnInit {
     return false;
   }
   ngOnInit() {
+    this.doSearch("mwangi-njuguna");
   }
 
 }
