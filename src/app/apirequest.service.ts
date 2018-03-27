@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
+import { environment } from '../environments/environment';
+
 
 @Injectable()
 export class ApirequestService {
   loading: boolean;
   message_status: boolean;
-  item_bag: SearchItem;
-  item_store: Array<any>;
-  item_store1: Array<SearchItem>;
   results: Object[];
   results1: Object[];
   results2: Object[];
@@ -85,6 +86,4 @@ export class ApirequestService {
     //  console.log(this.results)
     return promise;
   }
-}
-
 }
