@@ -51,10 +51,25 @@ export class ApirequestService {
         },
         err => {
           this.message = "Sorry user not found"
-        })
-      //  console.log(this.results)
-      return promise;
-    }
+        }),
+        this.http.get<any>(environment.apiRoot + "users/" + term + "/repos", httpOptions).toPromise().then(
+          resp => {
+            if (this.isEmptyObject(resp)) {
+              //  console.log("user not found")
+            } else {
+              //  console.log(resp);
+              this.results = resp;
+            }
+            resolve();
+          },
+          err => {
+            //  console.log("Sorry, User not found!")
+            this.message = "User does not exist/contain any repo"
+          })
+    })
+    //  console.log(this.results)
+    return promise;
+  }
 }
 
 }
