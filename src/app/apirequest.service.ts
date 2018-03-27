@@ -12,6 +12,21 @@ export class ApirequestService {
   results2: Object[];
   results3: Object[];
   message: string;
-  constructor() { }
+  constructor(private http: HttpClient, private HS: HandleService) {
+    this.loading = false;
+    this.results = [];
+    this.results1 = [];
+    this.results2 = [];
+    this.results3 = [];
+  }
+  isEmptyObject(obj) {
+    for (var prop in obj) {
+      if (obj.hasOwnProperty(prop)) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 
 }
