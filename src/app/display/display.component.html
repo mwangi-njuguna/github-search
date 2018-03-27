@@ -20,3 +20,15 @@
           </form>
         </li>
       </ul>
+
+      <ul *ngFor="let owner of AS.results2">
+        <span id="a"><img class="img-circle center-block" src="{{owner.avatar_url}}" alt="user image"></span>
+        <span id="b">
+                  <p>
+                <button class="button">NAME: <a target="_blank" href="{{owner.html_url}}">{{owner.login}}</a></button>
+                <button class="button">FOLLOWERS: {{owner.followers}}</button>
+                <button class="button">FOLLOWING: {{owner.following}}</button>
+                <button class="button">REPOS: {{owner.public_repos}}</button>
+            </span>
+      </ul>
+    </aside>
