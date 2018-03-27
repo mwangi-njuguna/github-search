@@ -8,15 +8,18 @@ import { DisplayComponent } from './display/display.component';
 import { ApirequestService } from './apirequest.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    DisplayComponent
+    DisplayComponent,
+    NavigationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApirequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
