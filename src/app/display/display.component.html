@@ -32,3 +32,24 @@
             </span>
       </ul>
     </aside>
+    <section id="content" class="three-column">
+      <div class="text-center center-block">
+        <p class="lead" id="loading" *ngIf="loading">Loading . . . . Please wait</p>
+      </div>
+      <article class="middle-section">
+        <h2>USER'S REPOSITORIES</h2>
+        <hr>
+        <ul class="center-block">
+          <li *ngFor="let item of AS.results" class="button button-reversed">
+            REPO-NAME: <a target="_blank" href="{{item.url}}">{{item.name}}</a>
+            <br>DESCRIPTION: {{item.description}}
+            <br>FORKS: {{item.forks}}
+            <br>WATCHERS: {{item.watchers}}
+            <br>STARS: {{item.stargazers_count}}
+          </li>
+          <li *ngIf="AS.results==false" class="repofound">
+            No user repos!
+          </li>
+        </ul>
+      </article>
+    </section>
