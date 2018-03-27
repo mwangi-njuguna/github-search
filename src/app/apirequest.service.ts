@@ -65,6 +65,21 @@ export class ApirequestService {
           err => {
             //  console.log("Sorry, User not found!")
             this.message = "User does not exist/contain any repo"
+          }),
+        this.http.get<any>(environment.apiRoot + "search/repositories?q={" + term + "}", httpOptions).toPromise().then(
+          resp => {
+            if (this.isEmptyObject(resp['items'])) {
+              //console.log("No such repositories found!")
+            } else {
+              //  console.log(resp);
+              this.results1.push(resp)
+              this.results3 = resp.items;
+            }
+            resolve();
+          },
+          err => {
+            //console.log("No repositories found")
+            this.message = "No repositories found";
           })
     })
     //  console.log(this.results)
