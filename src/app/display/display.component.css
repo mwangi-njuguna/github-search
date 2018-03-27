@@ -93,3 +93,427 @@ a.button:hover {
   background: linear-gradient(#ccc, #999);
   color: #000;
 }
+
+a.button-reversed:hover {
+  color: #555;
+}
+
+fieldset {
+  display: block;
+  border: none;
+  border-top: 1px solid #0D2F3F;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 0.9em;
+  padding-right: 10px;
+  color: #ccc;
+}
+
+fieldset form {
+  padding-top: 15px;
+}
+
+fieldset p label {
+  float: left;
+  width: 150px;
+}
+
+form input, form select, form textarea {
+  padding: 5px;
+  color: #333333;
+  border: 1px solid #0D2F3F;
+  border-right: 1px solid #9CB4BD;
+  border-bottom: 1px solid #9CB4BD;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form input.formbutton {
+  border: none;
+  background: #9CB4BD;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 6px 10px;
+  letter-spacing: 1px;
+  width: auto;
+}
+
+#a img {
+  border: 2px solid #ccc;
+  max-width: 100%;
+  height: 12vh;
+}
+
+form.searchform input {
+  text-align: center;
+  font-family: monospace;
+  color: #000;
+  width: auto;
+}
+
+form.searchform p {
+  margin: 5px 0;
+}
+
+.btn.btn-primary {
+  font-family: cursive;
+}
+
+span.required {
+  color: #ff0000;
+}
+
+h1 {
+  color: #ddd;
+  font-size: 2.7em;
+  font-weight: 200;
+}
+
+h2 {
+  color: #BCCDD2;
+  font-size: 2.2em;
+  letter-spacing: -1px;
+  padding: 0 0 5px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h3 {
+  color: #BCCDD2;
+  font-size: 1.2em;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+h4 {
+  color: #08202B;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+h5 {
+  padding-bottom: 10px;
+  font-size: 1.1em;
+  color: #eee;
+}
+
+ul, ol {
+  margin: 0 0 35px 35px;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+li ol, li ul {
+  font-size: 1.0em;
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+
+.width, #container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#container {
+  padding: 20px 10px;
+}
+
+.repofound {
+  font-family: 'Henny Penny', cursive;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50%
+}
+
+header {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(14, 47, 64, 0.5);
+}
+
+header h1 a, header h1 a:hover {
+  color: #fff;
+  font-size: 1.4em;
+  padding: 0px;
+  font-weight: 200;
+  border-bottom: none;
+  letter-spacing: -2px;
+  text-shadow: 1px 1px 0px #163A48;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px 18px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1.2em;
+  letter-spacing: 0;
+  text-shadow: 1px 1px 0px #163A48;
+  border-bottom: none;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #163A48;
+}
+
+nav ul li.selected a, nav ul li.selected a:hover {
+  color: #fff;
+}
+
+#body {
+  border-radius: 20px;
+  background-color: rgba(14, 47, 64, 0.5);
+  padding: 20px;
+  margin: 10px 0;
+  clear: both;
+}
+
+#content {
+  float: left;
+}
+
+#loading {
+  font-family: 'Crafty Girls', cursive;
+}
+
+.middle-section {
+  border-bottom: none;
+  height: 68vh;
+  box-shadow: inset 3px 16px 61px -7px #40C3FF;
+  -webkit-box-shadow: inset 3px 16px 61px -7px #40C3FF;
+  -moz-box-shadow: inset 3px 16px 61px -7px #40C3FF;
+  -o-box-shadow: inset 3px 16px 61px -7px #40C3FF;
+}
+
+.middle-section h2 {
+  font-size: 150%;
+  text-align: center;
+}
+
+.middle-section ul {
+  overflow: auto;
+  height: 53vh;
+  box-shadow: 0 0 6px 6px rgb(16, 54, 57);
+}
+
+.two-column {
+  width: 68%;
+}
+
+.with-left-sidebar {
+  margin-left: 2%;
+}
+
+.with-right-sidebar {
+  margin-right: 2%;
+}
+
+.three-column {
+  width: 46%;
+  margin: 0 2%;
+}
+
+article {
+  padding: 10px 10px 20px 5px;
+}
+
+article h2 {
+  padding-bottom: 0;
+}
+
+article .article-info {
+  color: #ddd;
+  font-size: 0.85em;
+  letter-spacing: -0.5px;
+  padding: 0 0 10px 0;
+}
+
+article .article-info a {
+  color: #ddd;
+  border-bottom-color: #ddd;
+}
+
+.sidebar {
+  margin-top: 10px;
+}
+
+.small-sidebar {
+  width: 25%;
+}
+
+.big-sidebar {
+  width: 30%;
+}
+
+.left-sidebar {
+  float: left;
+}
+
+.right-sidebar {
+  float: right;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+  line-height: 1.9em;
+  padding: 10px;
+}
+
+.sidebar ul li.bg {
+  background-color: #113E4B;
+}
+
+.sidebar ul li.bg h4 {
+  color: #ACC1C8;
+}
+
+.sidebar li ul {
+  list-style: none outside none;
+  margin: 0px;
+}
+
+.sidebar li ul li {
+  display: block;
+  border-top: none;
+  padding: 7px 2px;
+  margin: 0;
+  line-height: 1.5em;
+  font-size: 0.85em;
+}
+
+.sidebar ul.blocklist {
+  border-top: 1px solid #0D2F3F;
+  overflow: auto;
+  height: 48vh;
+  box-shadow: inset 0 4px 4px #000;
+}
+
+.sidebar ul.blocklist li {
+  border-bottom: 1px solid #0D2F3F;
+  padding: 0;
+  padding-left: 5%;
+  text-align: left;
+  text-transform: capitalize;
+  width: auto;
+  height: auto;
+}
+
+.sidebar ul.blocklist li a {
+  border-bottom: 0;
+  text-transform: lowercase;
+  padding: 12px 10px;
+}
+
+.sidebar ul.blocklist li a.selected {
+  background-color: #9CB4BD;
+  background-image: linear-gradient(#9CB4BD, #7E9DA9);
+  color: #455E68;
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+footer p, footer p a {
+  color: #98B1BA;
+  border-bottom-color: #98B1BA;
+}
+
+@media screen and (max-width: 740px) {
+  body {
+    font-size: 0.8em;
+  }
+  header h1 a, header h1 a:hover {
+    padding: 5px;
+  }
+  div#container {
+    width: auto;
+  }
+  footer .footer-content ul {
+    margin-bottom: 15px;
+  }
+  footer .footer-content ul.endfooter {
+    margin-bottom: 0px;
+  }
+  .width {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #content, aside.sidebar {
+    float: none;
+    width: auto;
+  }
+  footer .footer-content ul {
+    width: auto;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    font-size: 0.8em;
+    background-position: left -100px;
+  }
+  header, header h1 a, header h1 a:hover {
+    text-align: center;
+    padding: 10px 0 0 0;
+    font-size: 1.1em;
+  }
+  nav ul {
+    margin-top: 0;
+    padding: 10px;
+  }
+  nav ul li {
+    float: none;
+    text-align: center;
+  }
+  nav ul li a {
+    margin-top: 0;
+  }
+  nav {
+    height: auto;
+    position: relative;
+  }
+}
