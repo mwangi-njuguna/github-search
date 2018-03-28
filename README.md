@@ -1,6 +1,6 @@
 # Github Search
 
-A webpage that users can submit their quotes and also view and vote on other quotes. 
+A single page application for searching github users and repositories.
 
 ## Getting Started
 
