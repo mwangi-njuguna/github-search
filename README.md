@@ -1,27 +1,47 @@
-# Github
+# Github Search
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+A webpage that users can submit their quotes and also view and vote on other quotes. 
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+```
+Angular-cli
+node v9.8
+npm v5.4
+```
+## Installation
+
+### Platform & tools
+
+You need to install Node.js and then the development tools. Node.js comes with a package manager called npm for installing NodeJS applications and libraries.
+You also need to install angular-cli on top of the npm.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Deployment
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng build --prod --base-href="https://YOURGITHUB-USERAME.github.io/REPO-NAME/"`
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Built With
+* [Node](https://nodejs.org/) - Dependency Management
+* [Bootstrap](http://getbootstrap.com/docs/3.3/) - The css framework used
 
-## Running unit tests
+## Authors
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* **Mwangi Njuguna**
 
-## Running end-to-end tests
+## License
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Further help
+## Acknowledgments
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Hat tip to anyone who's code was used
