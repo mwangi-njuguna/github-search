@@ -12,8 +12,7 @@ import { ApirequestService } from './apirequest.service';
 @NgModule({
   declarations: [
     AppComponent,
-    DisplayComponent,
-    NavigationComponent
+    DisplayComponent
   ],
   imports: [
     BrowserModule,

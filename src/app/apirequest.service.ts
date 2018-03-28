@@ -13,7 +13,7 @@ export class ApirequestService {
   results2: Object[];
   results3: Object[];
   message: string;
-  constructor(private http: HttpClient, private HS: HandleService) {
+  constructor(private http: HttpClient) {
     this.loading = false;
     this.results = [];
     this.results1 = [];
@@ -26,7 +26,6 @@ export class ApirequestService {
         return false;
       }
     }
-
     return true;
   }
   search(term: string) {

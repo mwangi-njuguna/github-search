@@ -47,28 +47,30 @@
             <br>WATCHERS: {{item.watchers}}
             <br>STARS: {{item.stargazers_count}}
           </li>
-          <li *ngIf="AS.results==false" class="repofound">
+          <li *ngIf="AS.isEmptyObject(AS.results)" class="repofound">
             No user repos!
           </li>
         </ul>
       </article>
     </section>
     <aside class="sidebar small-sidebar right-sidebar">
-      <ul *ngFor="let det of AS.results1">
-        <h3>{{det.total_count}} REPOSITORIES FOUND!!</h3>
-        <ul class="blocklist">
-          <li class="button button-reversed" *ngFor="let detail of AS.results3">
-            <br>REPO-NAME:
-            <<a target="_blank" href="{{detail.html_url}}">{{detail.name}}</a>
+      <ul *ngIf="AS.results1">
+        <ul *ngFor="let det of AS.results1">
+          <h3>{{det.total_count}} REPOSITORIES FOUND!!</h3>
+          <ul class="blocklist">
+            <li class="button button-reversed" *ngFor="let detail of AS.results3">
+              <br>REPO-NAME:
+              <a target="_blank" href="{{detail.html_url}}">{{detail.name}}</a>
               <br>OWNER:<a target="_blank" href="{{detail.owner.html_url}}">{{detail.owner.login}}</a>
               <br>DESCRIPTION: {{detail.description}}
               <br>FORKS: {{detail.forks}}
               <br>WATCHERS: {{detail.watchers}}
               <br>STARS: {{detail.stargazers_count}}
               <li>
+          </ul>
         </ul>
       </ul>
-      <ul *ngIf="AS.results1==false" class="repofound">
+      <ul *ngIf="AS.isEmptyObject(AS.results1)" class="repofound">
         search repos to view them here!
       </ul>
     </aside>
