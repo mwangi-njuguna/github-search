@@ -25,7 +25,7 @@
         <span id="a"><img class="img-circle center-block" src="{{owner.avatar_url}}" alt="user image"></span>
         <span id="b">
                   <p>
-                <button class="button">NAME: <a target="_blank" href="{{owner.html_url}}">{{owner.login}}</a></button>
+                <li class="button">NAME: <a  href="{{owner.html_url}}">{{owner.login}}</a></li>
                 <button class="button">FOLLOWERS: {{owner.followers}}</button>
                 <button class="button">FOLLOWING: {{owner.following}}</button>
                 <button class="button">REPOS: {{owner.public_repos}}</button>
@@ -41,7 +41,7 @@
         <hr>
         <ul class="center-block">
           <li *ngFor="let item of AS.results" class="button button-reversed">
-            REPO-NAME: <a target="_blank" href="{{item.url}}">{{item.name}}</a>
+            REPO-NAME: <a target="_blank" href="{{item.html_url}}">{{item.name}}</a>
             <br>DESCRIPTION: {{item.description}}
             <br>FORKS: {{item.forks}}
             <br>WATCHERS: {{item.watchers}}
